@@ -40,13 +40,13 @@ export const categories = [
     ],
   },
   {
-    name: "Tangent Lines",
+    name: "Function Analysis",
     questions: [
-      { points: 100, question: "Find the equation of the tangent line to y = x² at x = 3.", answer: "y = 6x - 9" },
-      { points: 200, question: "Find the tangent line to y = sin(x) at x = π/4.", answer: "y = (√2/2)(x - π/4) + √2/2" },
-      { points: 300, question: "Find the tangent line to the curve x² + y² = 25 at the point (3, 4).", answer: "y = -3x/4 + 25/4" },
-      { points: 400, question: "Find all points on y = x³ - 3x where the tangent is horizontal.", answer: "At x = ±1: points (1, -2) and (-1, 2)" },
-      { points: 500, question: "Find the equation of the tangent line to x²y + y³ = 10 at (1, 2).", answer: "y = (-4/13)x + 30/13" },
+      { points: 100, question: "For f(x) = x³ - 6x², determine where f is increasing and decreasing.", answer: "Decreasing on (0, 4); Increasing on (-∞, 0) and (4, ∞)" },
+      { points: 200, question: "Find the inflection points of f(x) = x⁴ - 6x³ + 12x².", answer: "Inflection points at x = 1 and x = 3" },
+      { points: 300, question: "For f(x) = (x-1)⁵(x+2)³, determine intervals of concavity and find inflection points.", answer: "Concave down on (-2, 1); Concave up on (-∞, -2) and (1, ∞); Inflection points at x = -2 and x = 1" },
+      { points: 400, question: "Analyze f(x) = x⁴ - 4x³ + 4x²: find critical points, classify them, and determine concavity intervals.", answer: "Critical points: x = 0 (inflection), x = 2/3 (local max), x = 2 (local min); Concave up on (-∞, 1/3) ∪ (1, ∞); Concave down on (1/3, 1)" },
+      { points: 500, question: "For f(x) = xe^(-x²), find critical points, classify them using the second derivative test, and identify concavity intervals.", answer: "Critical points: x = ±1/√2 (local max at 1/√2, local min at -1/√2); Inflection points at x = ±√(3/2)" },
     ],
   },
 ];
