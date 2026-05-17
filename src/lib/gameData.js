@@ -1,12 +1,12 @@
 export const categories = [
   {
-    name: "Normal Derivatives",
+    name: "Finding Extrema",
     questions: [
-      { points: 100, question: "Find the derivative of f(x) = 3x² + 5x - 7", answer: "f'(x) = 6x + 5" },
-      { points: 200, question: "Find the derivative of f(x) = sin(x) · cos(x)", answer: "f'(x) = cos²(x) - sin²(x) = cos(2x)" },
-      { points: 300, question: "Find the derivative of f(x) = e^(3x) · ln(x)", answer: "f'(x) = 3e^(3x)·ln(x) + e^(3x)/x" },
-      { points: 400, question: "Find the derivative of f(x) = (x³ - 2x)/(x² + 1)", answer: "f'(x) = (x⁴ + 5x² - 2)/(x² + 1)²" },
-      { points: 500, question: "Find the derivative of f(x) = arctan(e^x) · √(x² + 1)", answer: "f'(x) = [e^x·√(x²+1)]/(1+e^(2x)) + arctan(e^x)·x/√(x²+1)" },
+      { points: 100, question: "Find the critical points of f(x) = x³ - 3x² + 2", answer: "Critical points at x = 0 and x = 2" },
+      { points: 200, question: "Find the local extrema of f(x) = x⁴ - 8x²", answer: "Local max at (0, 0); Local mins at (±2, -16)" },
+      { points: 300, question: "Determine where f(x) = x³ - 6x² + 9x is increasing/decreasing", answer: "Decreasing on (1, 3); Increasing on (-∞, 1) and (3, ∞)" },
+      { points: 400, question: "Find the absolute extrema of f(x) = 2x³ - 3x² - 12x + 5 on [-3, 4]", answer: "Absolute max: f(4) = 69; Absolute min: f(-1) = -8" },
+      { points: 500, question: "Find extrema of f(x) = xe^(-x) and classify them.", answer: "Local max at (1, 1/e) ≈ (1, 0.368)" },
     ],
   },
   {

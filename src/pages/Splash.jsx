@@ -98,27 +98,7 @@ export default function Splash() {
           </Link>
         </motion.div>
 
-        {/* Category pills */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="mt-16 flex flex-wrap justify-center gap-3"
-        >
-          {["Derivatives", "Implicit Diff", "Optimization", "Related Rates", "Tangent Lines"].map(
-            (cat, i) => (
-              <motion.span
-                key={cat}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1.2 + i * 0.1 }}
-                className="px-4 py-1.5 rounded-full border border-border bg-muted/50 text-sm font-body text-muted-foreground"
-              >
-                {cat}
-              </motion.span>
-            )
-          )}
-        </motion.div>
+
       </div>
     </div>
   );
