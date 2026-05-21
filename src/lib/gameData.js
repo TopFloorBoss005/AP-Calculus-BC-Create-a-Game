@@ -46,7 +46,7 @@ export const categories = [
       { points: 200, question: "Find the inflection points of f(x) = x⁴ - 6x³ + 12x².", answer: "Inflection points at x = 1 and x = 3" },
       { points: 300, question: "For f(x) = (x-1)⁵(x+2)³, determine intervals of concavity and find inflection points.", answer: "Concave down on (-2, 1); Concave up on (-∞, -2) and (1, ∞); Inflection points at x = -2 and x = 1" },
       { points: 400, question: "Analyze f(x) = x⁴ - 4x³ + 4x²: find critical points, classify them, and determine concavity intervals.", answer: "Critical points: x = 0 (inflection), x = 2/3 (local max), x = 2 (local min); Concave up on (-∞, 1/3) ∪ (1, ∞); Concave down on (1/3, 1)" },
-      { points: 500, question: "A twice-differentiable f(x) has: f′(x)=0 at x=−2,1,4; f′′(x)=0 at x=0,3; f′>0 on (−∞,−2)∪(1,4); f′<0 on (−2,1)∪(4,∞); f′′>0 on (−∞,0)∪(3,∞); f′′<0 on (0,3). Determine the total number of local extrema and inflection points, and classify each.", answer: "Local extrema (3): local max at x=−2, local min at x=1, local max at x=4. Inflection points (2): x=0 and x=3. Total: 5 key points." },
+      { points: 500, question: "For f(x) = x⁵ - 5x⁴ + 5x³ + 1, find all local extrema and inflection points, and classify each.", answer: "f′(x)=5x²(x−1)(x−3): local min at x=3, neither at x=0, local max at x=1. f′′(x)=20x³−60x²+30x: inflection points at x=0, x=(3±√3)/2 ≈ 0.63 and 2.37." },
     ],
   },
 ];
