@@ -25,21 +25,21 @@ export default function QuestionModal({ question, category, teams, onAward, onCl
           className="w-full max-w-2xl bg-card border border-border rounded-2xl shadow-2xl overflow-hidden"
         >
           {/* Header */}
-          <div className="p-6 border-b border-border bg-secondary/30">
+          <div className="p-8 border-b border-border bg-secondary/30">
             <div className="flex items-center justify-between mb-1">
-              <span className="font-body text-sm text-muted-foreground uppercase tracking-wider">
+              <span className="font-body text-lg text-muted-foreground uppercase tracking-wider font-semibold">
                 {category}
               </span>
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 font-display font-bold text-primary text-lg">
-                <DollarSign className="w-4 h-4" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 font-display font-bold text-primary text-2xl">
+                <DollarSign className="w-6 h-6" />
                 {question.points}
               </span>
             </div>
           </div>
 
           {/* Question */}
-          <div className="p-8">
-            <p className="font-display text-xl md:text-2xl font-bold text-foreground leading-relaxed text-center">
+          <div className="p-12 min-h-[300px] flex items-center justify-center">
+            <p className="font-display text-4xl md:text-5xl font-bold text-foreground leading-relaxed text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
               {question.question}
             </p>
           </div>
@@ -53,9 +53,9 @@ export default function QuestionModal({ question, category, teams, onAward, onCl
                 exit={{ opacity: 0, height: 0 }}
                 className="overflow-hidden"
               >
-                <div className="px-8 pb-6">
-                  <div className="p-5 rounded-xl bg-primary/5 border border-primary/20">
-                    <p className="font-body text-lg font-semibold text-primary text-center">
+                <div className="px-12 pb-8">
+                  <div className="p-8 rounded-xl bg-primary/5 border border-primary/20">
+                    <p className="font-body text-3xl font-semibold text-primary text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
                       {question.answer}
                     </p>
                   </div>
