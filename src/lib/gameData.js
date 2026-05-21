@@ -43,10 +43,10 @@ export const categories = [
     name: "Function Analysis",
     questions: [
       { points: 100, question: "For f(x) = x³ - 6x², determine where f is increasing and decreasing.", answer: "Decreasing on (0, 4); Increasing on (-∞, 0) and (4, ∞)" },
-      { points: 200, question: "Find the inflection points of f(x) = x⁴ - 6x³ + 12x².", answer: "Inflection points at x = 1 and x = 3" },
-      { points: 300, question: "For f(x) = (x-1)⁵(x+2)³, determine intervals of concavity and find inflection points.", answer: "Concave down on (-2, 1); Concave up on (-∞, -2) and (1, ∞); Inflection points at x = -2 and x = 1" },
-      { points: 400, question: "Analyze f(x) = x⁴ - 4x³ + 4x²: find critical points, classify them, and determine concavity intervals.", answer: "Critical points: x = 0 (inflection), x = 2/3 (local max), x = 2 (local min); Concave up on (-∞, 1/3) ∪ (1, ∞); Concave down on (1/3, 1)" },
-      { points: 500, question: "For f(x) = x⁵ - 5x⁴ + 5x³ + 1, find all local extrema and inflection points, and classify each.", answer: "f′(x)=5x²(x−1)(x−3): local min at x=3, neither at x=0, local max at x=1. f′′(x)=20x³−60x²+30x: inflection points at x=0, x=(3±√3)/2 ≈ 0.63 and 2.37." },
+      { points: 200, question: "Find the inflection points of f(x) = x⁴ - 6x³ + 12x².", answer: "x = 1 and x = 3" },
+      { points: 300, question: "For f(x) = (x-1)⁵(x+2)³, determine intervals of concavity and find inflection points.", answer: "Inflection points at x = -2 and x = 1" },
+      { points: 400, question: "Analyze f(x) = x⁴ - 4x³ + 4x²: find critical points, classify them, and determine concavity intervals.", answer: "Critical points: x = 0 (neither), x = 2/3 (local max), x = 2 (local min)" },
+      { points: 500, question: "For f(x) = x⁵ - 5x⁴ + 5x³ + 1, find all local extrema and inflection points, and classify each.", answer: "Local max at x=1, local min at x=3. Inflection points at x=0, x≈0.63, x≈2.37" },
     ],
   },
 ];

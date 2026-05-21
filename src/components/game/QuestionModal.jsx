@@ -37,28 +37,32 @@ export default function QuestionModal({ question, category, teams, onAward, onCl
             </div>
           </div>
 
-          {/* Question */}
-          <div className="p-12 min-h-[300px] flex items-center justify-center">
-            <p className="font-display text-4xl md:text-5xl font-bold text-foreground leading-relaxed text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
-              {question.question}
-            </p>
-          </div>
-
-          {/* Answer */}
-          <AnimatePresence>
-            {showAnswer && (
+          {/* Question or Answer */}
+          <AnimatePresence mode="wait">
+            {!showAnswer ? (
               <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                className="overflow-hidden"
+                key="question"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="p-12 min-h-[300px] flex items-center justify-center"
               >
-                <div className="px-12 pb-8">
-                  <div className="p-8 rounded-xl bg-primary/5 border border-primary/20">
-                    <p className="font-body text-3xl font-semibold text-primary text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
-                      {question.answer}
-                    </p>
-                  </div>
+                <p className="font-display text-4xl md:text-5xl font-bold text-foreground leading-relaxed text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
+                  {question.question}
+                </p>
+              </motion.div>
+            ) : (
+              <motion.div
+                key="answer"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="px-12 py-8"
+              >
+                <div className="p-8 rounded-xl bg-primary/5 border border-primary/20">
+                  <p className="font-body text-3xl font-semibold text-primary text-center" style={{ fontFamily: 'Monaco, "Courier New", monospace' }}>
+                    {question.answer}
+                  </p>
                 </div>
               </motion.div>
             )}
